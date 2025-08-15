@@ -33,7 +33,7 @@
   <section id="about" class="about">
     <div class="container">
       <h2>About Us</h2>
-      <p>Blow It Instruments is dedicated to providing world-class wind instruments that inspire musicians of all levels. From jazz to classical, we have the tools to make your music sing.</p>
+      <p>Blow It Instruments is dedicated to providing world-class wind instruments that inspire musicians of all levels. From jazz to classical, we have the tools to make your music A special Thing.</p>
     </div>
   </section>
 
@@ -65,8 +65,32 @@
   <section id="contact" class="contact">
     <div class="container">
       <h2>Contact Us</h2>
-      <p><strong>Phone:</strong> 09061471407</p>
-      <p><strong>Email:</strong> contact@blowit.com</p>
+      <p class="sub">We’d love to hear from you — reach out or drop a message.</p>
+
+      <div class="contact-grid">
+        <!-- Contact Info Card -->
+        <div class="contact-card">
+          <h3>Reach Us</h3>
+          <ul class="contact-list">
+            <li>Phone NO: <span>09061471407</span></li>
+            <li>Email: <span>contact@blowit.com</span></li>
+            <li>Location: <span>35 Music Street, Abuja, Nigeria</span></li>
+          </ul>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="contact-card">
+          <h3>Send a Message</h3>
+          <form class="contact-form" action="#" method="post">
+            <div class="form-row">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send</button>
+          </form>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -78,7 +102,7 @@
 
   <script>
     ScrollReveal().reveal('.hero-content', { delay: 200, distance: '50px', origin: 'bottom', duration: 1000 });
-    ScrollReveal().reveal('.about, .instrument-card, .contact', { delay: 200, distance: '50px', origin: 'bottom', interval: 200 });
+    ScrollReveal().reveal('.about, .instrument-card, .contact-card', { delay: 200, distance: '50px', origin: 'bottom', interval: 200 });
   </script>
 </body>
 </html>
