@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blow It Instruments</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">🎷 Blow It</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#instruments">Instruments</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Master the Art of Wind</h1>
+      <p class="tagline">Your one-stop shop for premium wind instruments.</p>
+      <a href="#instruments" class="btn">Explore Collection</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Blow It Instruments is dedicated to providing world-class wind instruments that inspire musicians of all levels. From jazz to classical, we have the tools to make your music sing.</p>
+    </div>
+  </section>
+
+  <!-- Instruments -->
+  <section id="instruments" class="instruments">
+    <div class="container">
+      <h2>Our Instruments</h2>
+      <div class="instrument-grid">
+        <div class="instrument-card">
+          <img src="Saxophone.JPG" alt="Saxophone">
+          <h3>Saxophone</h3>
+          <p>Rich tone, unmatched versatility.</p>
+        </div>
+        <div class="instrument-card">
+          <img src="Trumpet.JPG" alt="Trumpet">
+          <h3>Trumpet</h3>
+          <p>Bright and powerful sound for any stage.</p>
+        </div>
+        <div class="instrument-card">
+          <img src="Flute.JPG" alt="Flute">
+          <h3>Flute</h3>
+          <p>Elegant, light, and perfect for melodies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p><strong>Phone:</strong> 09061471407</p>
+      <p><strong>Email:</strong> contact@blowit.com</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Blow It Instruments | Designed by Israel</p>
+    </div>
+  </footer>
+
+  <script>
+    ScrollReveal().reveal('.hero-content', { delay: 200, distance: '50px', origin: 'bottom', duration: 1000 });
+    ScrollReveal().reveal('.about, .instrument-card, .contact', { delay: 200, distance: '50px', origin: 'bottom', interval: 200 });
+  </script>
+</body>
+</html>
