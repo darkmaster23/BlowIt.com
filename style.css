@@ -47,6 +47,50 @@ body {
   color: #ffcc00;
 }
 
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white; /* matches navbar text */
+  border-radius: 2px;
+}
+
+/* Responsive Navbar with Slide-down Animation */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 70px; /* adjust based on navbar height */
+    right: 5%;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 0; /* start collapsed */
+    border-radius: 8px;
+    overflow: hidden;
+    max-height: 0; /* collapsed by default */
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    box-shadow: 0 4px 10px rgba(255, 204, 0, 0.2);
+  }
+
+  .nav-links.active {
+    max-height: 500px; /* enough to show all links */
+    padding: 15px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
 /* Hero Section */
 .hero {
   height: 100vh;
@@ -129,16 +173,15 @@ body {
   box-shadow: 0 8px 20px rgba(255, 204, 0, 0.2);
 }
 
-/* Instrument Images Fixed */
 .instrument-card img {
-  width: 100%;             /* fills card width */
-  height: auto;            /* preserves aspect ratio */
-  max-height: 220px;       /* uniform card height */
-  object-fit: contain;     /* fit entire image inside card */
-  display: block;          /* remove small gaps */
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+  object-fit: contain;
+  display: block;
   border-radius: 8px;
-  margin: 0 auto;          /* center images horizontally */
-  background: #1a1a1a;     /* fallback background */
+  margin: 0 auto;
+  background: #1a1a1a;
 }
 
 .instrument-card h3 {
